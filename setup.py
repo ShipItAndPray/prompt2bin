@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="prompt2bin",
+    name="promptcompile",
     version="0.1.0",
     description="Turn English into executables. Prompt -> Binary. No code.",
     packages=find_packages(),

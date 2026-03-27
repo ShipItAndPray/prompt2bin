@@ -3,7 +3,7 @@ requires = ["setuptools>=68.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "prompt2bin"
+name = "promptcompile"
 version = "0.1.0"
 description = "Turn English into executables. Prompt -> Binary. No code."
 readme = "README.md"

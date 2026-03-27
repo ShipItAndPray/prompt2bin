@@ -23,7 +23,7 @@ try:
     from mcp.server.stdio import stdio_server
     from mcp.types import TextContent, Tool
 except ImportError:
-    print("Install MCP SDK: pip install 'prompt2bin[mcp]'", file=sys.stderr)
+    print("Install MCP SDK: pip install 'promptcompile[mcp]'", file=sys.stderr)
     sys.exit(1)
 
 

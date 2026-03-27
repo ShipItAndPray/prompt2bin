@@ -51,7 +51,7 @@ You describe a tool in plain English. prompt2bin generates a self-contained comp
 ## Install
 
 ```bash
-pip install prompt2bin
+pip install promptcompile
 ```
 
 Or from source:
