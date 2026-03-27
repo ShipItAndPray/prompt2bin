@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "prompt2bin"
+version = "0.1.0"
+description = "Turn English into executables. Prompt -> Binary. No code."
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.9"
+authors = [{name = "ShipItAndPray"}]
+keywords = ["ai", "binary", "compiler", "llm", "code-generation"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development :: Code Generators",
+]
+dependencies = [
+    "anthropic>=0.40.0",
+]
+
+[project.optional-dependencies]
+mcp = ["mcp>=1.0.0"]
+
+[project.scripts]
+p2b = "prompt2bin.cli:main"
+prompt2bin = "prompt2bin.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/ShipItAndPray/prompt2bin"
+
+[tool.setuptools.packages.find]
+where = ["."]
